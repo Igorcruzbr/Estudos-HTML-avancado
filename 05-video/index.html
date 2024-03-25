@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeo</title>
+</head>
+
+<body>
+    <h1>Vídeo</h1>
+    <h2>Primeiro método</h2>
+    <video src="videos/video.mp4" width="200px" controls autoplay muted loop></video>
+
+    <h2>Segundo método</h2>
+    <video src="videos/video.mp4" width="200px" controls poster="images/thumb.jpg" ></video>
+
+    <h2>Terceiro método</h2>
+    <video width="200px" controls>
+        <source src="videos/video.mp4" type="video/mp4">
+        <source src="videos/video.ogg" type="video/ogg">
+        <source src="videos/video.webm" type="video/webm">
+        <p>Seu navegador não tem suporte para vídeo. Recomenda-se baixar o <a href="https://www.google.com/chrome/"
+                target="_blank">Google Chrome</a>.
+        </p>
+    </video>
+</body>
+
+</html>
