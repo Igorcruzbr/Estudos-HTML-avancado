@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens responsivas usando a tag picutre</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Picutre com descktop first</h1>
+    <h2>Usando o min-width</h2>
+    <picture>
+        <source media="(min-width: 768px)" srcset="https://placebacon.net/900/900">
+        <source media="(min-width: 465px)" srcset="https://placebacon.net/450/450">
+        <img src="https://placebacon.net/350/350" alt="Imagem de gatinho">
+    </picture>
+
+    <h2>Usando o max-width</h2>
+    <picture>
+        <source media="(max-width: 465px)" srcset="https://placebacon.net/450/450">
+        <source media="(max-width: 768px)" srcset="https://placebacon.net/900/900">
+        <img src="https://placebacon.net/1024/1024" alt="Imagem de um gatinho">
+    </picture>
+
+
+</body>
+
+</html>
